@@ -1,0 +1,84 @@
+body {
+    text-align: center;
+    font-family: 'Kosugi Maru', sans-serif; /* Anpanman font */
+}
+
+#start-screen {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: skyblue;
+    padding-top: 20px; 
+}
+
+#game-title {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+#start-button {
+    font-size: 2em;
+    padding: 10px 20px;
+    animation: blink 1.5s infinite;
+}
+
+@keyframes blink {
+    0% { opacity: 1; }
+    50% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+#start-button:hover {
+    transform: scale(1.1);
+}
+
+#game-screen {
+    padding: 20px;
+}
+
+#initial-message img {
+    width: 200px;
+    margin-top: 20px;
+}
+
+#janken-message {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#choices {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.choice {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.choice img {
+    width: 100px;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.choice img:hover,
+.choice p:hover {
+    transform: scale(1.2);
+}
+
+.choice p {
+    margin-top: 10px;
+    font-size: 1.5em;
+}
+
+#result-message {
+    font-size: 2em;
+    animation: blink 1.5s infinite;
+}
