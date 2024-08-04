@@ -43,7 +43,7 @@ const playGame = (playerChoice) => {
         (playerChoice === 'scissors' && computerChoice === 'paper') ||
         (playerChoice === 'paper' && computerChoice === 'rock')
     ) {
-        resultText = 'やったね！';
+        resultText = '勝った！やったね！';
         resultImgUrl = 'https://th.bing.com/th/id/OIP.Ue2CTe6XiRGrmutkssq_oAAAAA?rs=1&pid=ImgDetMain';
     } else {
         resultText = '負けちゃった・・・';
