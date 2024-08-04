@@ -36,7 +36,7 @@ const playGame = (playerChoice) => {
     let resultImgUrl = '';
 
     if (playerChoice === computerChoice) {
-        resultText = 'あいこでした！';
+        resultText = 'あいこだ！もう１回！';
         resultImgUrl = 'https://th.bing.com/th/id/OIP.AoqbwC6vpsxtGb93qwlFcwHaF5?rs=1&pid=ImgDetMain';
     } else if (
         (playerChoice === 'rock' && computerChoice === 'scissors') ||
